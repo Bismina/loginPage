@@ -1,0 +1,8 @@
+<svg id="Icon_" data-name="Icon " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Area_ICON:feather_menu_SIZE:LARGE_STYLE:STYLE1_" data-name="Area [ICON:feather/menu][SIZE:LARGE][STYLE:STYLE1]" width="24" height="24" fill="#fcfcfc" opacity="0"/>
+  <g id="Icon" transform="translate(-1 -1)">
+    <line id="Line" x2="18" transform="translate(4 13)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line-2" data-name="Line" x2="18" transform="translate(4 7)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line-3" data-name="Line" x2="18" transform="translate(4 19)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

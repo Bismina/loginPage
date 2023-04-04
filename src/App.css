@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 100px) and (max-width: 360px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+}

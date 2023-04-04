@@ -1,0 +1,210 @@
+.wrapper {
+  height: auto;
+  background-color: #fff;
+}
+.subWrapper {
+  padding: 20px;
+ 
+  background-color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.listingWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 103px;
+}
+
+.box {
+  border: 1.5px solid #3e3e3e;
+  padding: 10px;
+  height: 100px;
+  width: 400px;
+}
+.innerBoxWrapper {
+  display: flex;
+  
+  align-items: center;
+  gap: 20px;
+}
+.innerBoxWrapper img {
+  width: 100px;
+  height: 75px;
+}
+.innerBoxWrapper label {
+  color: #3d3d3d;
+  font-size: 14px;
+}
+.innerBoxWrapper p {
+  color: #6f6f6f;
+  font-size: 12px;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tab-label {
+  display: inline-block;
+  padding: 11px;
+  position: relative;
+}
+
+.tab-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #707070;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.tab-label:hover::after,
+.tab-label:focus::after {
+  transform: scaleX(1);
+}
+
+.tab-label.active::after {
+  transform: scaleX(1);
+}
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footerDiv img {
+  width: 40px;
+  height: 40px;
+}
+.footerlabel {
+  background-color: #fff;
+  height: 200px;
+  margin-top: 50px;
+}
+.exampleLabel {
+  text-align: center;
+
+  height: 100px;
+  margin-top: 30px;
+}
+.exampleLabel h4 {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.labeled {
+  font-size: 13px;
+  font-weight: 700;
+}
+@media (min-width: 100px) and (max-width: 360px) {
+  .tabs {
+    display: block;
+    
+  }
+  .subWrapper {
+   
+    margin-left: 0px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .listingWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  
+    margin-top: 260px;
+  }
+  .box {
+    border: 1.6px solid #3e3e3e;
+    padding: 10px;
+    height: 100px;
+    width: 270px;
+  }
+   .toggle {
+    text-align: right;
+    margin-right:30px;
+    margin-top: -31px;
+}
+}
+@media (min-width: 600px) and (max-width: 1700px) {
+  .toggle img {
+    display: none;
+  }
+  .box {
+    border: 1.6px solid #3e3e3e;
+    padding: 10px;
+    height: 100px;
+    width: 400px;
+  }
+}
+  @media (min-width: 480px) and (max-width: 599px) {
+    .toggle img {
+      display: none;
+    }
+    
+    .box {
+      border: 1.6px solid #3e3e3e;
+      padding: 10px;
+      height: 100px;
+      width: 200px;
+    }
+    .innerBoxWrapper {
+      display: flex;
+     
+      align-items: center;
+      gap: 10px;
+    }
+  
+}
+@media (min-width: 361px) and (max-width: 479px) {
+  .box {
+    border: 1.6px solid #3e3e3e;
+    padding: 10px;
+    height: 100px;
+    width: 150px;
+  }
+  .innerBoxWrapper {
+    display: flex;
+    
+    align-items: center;
+    gap: 5px;
+  }
+  .innerBoxWrapper img {
+    width: 55px;
+    height: 70px;
+  }
+  .innerBoxWrapper label {
+    color: #3d3d3d;
+    font-size: 12px;
+  }
+  .toggle img {
+    display: none;
+  }
+}
